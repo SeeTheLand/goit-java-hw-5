@@ -1,3 +1,9 @@
+class LevelTooBigException extends Exception {
+    LevelTooBigException() {
+        super("The Level is Too Big");
+    }
+}
+
 class Level {
     private int width;
     private int height;
@@ -43,8 +49,3 @@ class LevelLoaderTest {
     }
 }
 
-class LevelTooBigException extends Exception {
-    LevelTooBigException() {
-        super("The Level is Too Big");
-    }
-}
